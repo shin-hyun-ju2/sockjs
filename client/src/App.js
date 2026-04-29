@@ -13,7 +13,7 @@ function App() {
   const [msgList, setMsgList] = useState([]);
   useEffect(() => {
     // 2
-    sockJs.current = new SockJs("http://localhost:9999/sock"); //server.js에서 지정한 경로임.
+    sockJs.current = new SockJs("https://sockjs-server.onrender.com/sock");
   }, []);
   // 3
   useEffect(() => {
